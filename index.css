@@ -1,0 +1,150 @@
+html {
+  background-color: rgb(162, 162, 162);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 180px;
+  background-color: #fb5947;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header ul {
+  display: flex;
+}
+header ul button {
+  margin: 0 10px;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+main {
+  background-color: rgb(190, 190, 190);
+  width: 100%;
+  height: calc(100vh - 250px);
+  overflow: scroll;
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+}
+
+.modal {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal .box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 600px;
+  height: 350px;
+  border-radius: 20px;
+  transform: translateX(-50%);
+  z-index: 99;
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  padding: 50px;
+}
+.modal .box p {
+  color: #fb5947;
+  font-size: 20px;
+}
+.modal .box input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.modal .box .esc {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: #fb5947;
+  background: none;
+  font-weight: bolder;
+  font-size: 25px;
+  border: none;
+}
+.modal .box .add {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  color: white;
+  background-color: #fb5947;
+  width: 60px;
+  height: 30px;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 15px;
+  border: none;
+}
+
+.off {
+  display: none;
+}
+
+.ul {
+  padding: 30px;
+}
+.ul .list {
+  position: relative;
+  width: 90%;
+  margin: 10px;
+  background-color: white;
+  color: #fb5947;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.ul .list p:nth-child(2) {
+  color: black;
+  font-size: 14px;
+}
+.ul .list .delete {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fb5947;
+  background: none;
+  font-weight: bolder;
+  font-size: 25px;
+  border: none;
+}
+.ul .li2 {
+  flex-direction: row;
+}
+.ul .li2 img {
+  height: 100%;
+  margin-right: 10px;
+}
+.ul .li2 p:nth-child(2) {
+  color: #fb5947;
+}/*# sourceMappingURL=index.css.map */
