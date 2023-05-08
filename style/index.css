@@ -19,7 +19,7 @@ body {
 
 header {
   width: 100%;
-  height: 180px;
+  height: 170px;
   background-color: #fb5947;
   display: flex;
   flex-direction: column;
@@ -39,54 +39,36 @@ header ul .createBtn {
 .document {
   background-color: rgb(190, 190, 190);
   width: 100%;
-  height: calc(100vh - 250px);
+  height: calc(100vh - 220px);
   overflow: scroll;
 }
 .document .ul {
   padding: 30px;
 }
-.document .ul .list {
-  position: relative;
-  width: 90%;
-  margin: 10px;
-  background-color: white;
-  color: #fb5947;
-  padding: 10px;
-  border-radius: 10px;
+.document section {
   display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid rgb(134, 134, 134);
+  width: 95%;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+.document .todo,
+.document .note {
   flex-direction: column;
-  align-items: start;
+  align-items: baseline;
 }
-.document .ul .list p:nth-child(2) {
-  color: black;
-  font-size: 14px;
-}
-.document .ul .list .delete {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #fb5947;
-  background: none;
-  font-weight: bolder;
-  font-size: 25px;
-  border: none;
-}
-.document .ul .li2 {
-  flex-direction: row;
-}
-.document .ul .li2 img {
-  height: 100%;
-  margin-right: 10px;
-}
-.document .ul .li2 p:nth-child(2) {
-  color: #fb5947;
+.document .image figure {
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 
 footer {
   width: 100%;
-  height: 70px;
-  background-color: black;
+  height: 50px;
+  background-color: rgb(44, 44, 44);
   color: white;
   display: flex;
   align-items: center;
