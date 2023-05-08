@@ -6,36 +6,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script defer src="./build/main.js"></script>
-  <link rel="stylesheet" href="./index.css">
+  <script defer src="./dist/app.js" type="module"></script>
+  <link rel="stylesheet" href="./style/index.css">
 </head>
 
 <body>
-  <header>
-    <h1>MOTION</h1>
-    <ul>
-      <li>
-        <button class="btn1">IMAGE</button>
-      </li>
-      <li>
-        <button class="btn2">NOTE</button>
-      </li>
-      <li>
-        <button class="btn2">TASK</button>
-      </li>
-      <li>
-        <button class="btn3">VIDEO</button>
-      </li>
-    </ul>
-  </header>
 
-  <main>
-    <ul class="ul">
-    </ul>
-  </main>
+  <div class="app">
+    <header>
+      <h1>MOTION</h1>
+      <ul>
+        <li>
+          <button class="createBtn" id="newImage">IMAGE</button>
+        </li>
+        <li>
+          <button class="createBtn" id="newNote">NOTE</button>
+        </li>
+        <li>
+          <button class="createBtn" id="newTodo">TASK</button>
+        </li>
+        <li>
+          <button class="createBtn" id="newVideo">VIDEO</button>
+        </li>
+      </ul>
+    </header>
 
-  <footer>
-  </footer>
+    <main class="document">
+    </main>
+
+    <footer>
+      this is footer
+    </footer>
+  </div>
 
   <div class="modal off">
     <div class="box">
@@ -51,6 +53,7 @@
       <button class="add">Add</button>
     </div>
   </div>
+
 </body>
 
 </html>

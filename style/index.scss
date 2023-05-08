@@ -26,7 +26,7 @@ header {
   align-items: center;
   ul {
     display: flex;
-    button {
+    .createBtn {
       margin: 0 10px;
       width: 100px;
       height: 50px;
@@ -36,17 +36,62 @@ header {
   }
 }
 
-main {
+.document {
   background-color: rgb(190, 190, 190);
   width: 100%;
   height: calc(100vh - 250px);
   overflow: scroll;
+
+  .ul {
+    padding: 30px;
+    .list {
+      position: relative;
+      width: 90%;
+      margin: 10px;
+      background-color: white;
+      color: #fb5947;
+      padding: 10px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      p:nth-child(2) {
+        color: black;
+        font-size: 14px;
+      }
+      .delete {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fb5947;
+        background: none;
+        font-weight: bolder;
+        font-size: 25px;
+        border: none;
+      }
+    }
+    .li2 {
+      flex-direction: row;
+      img {
+        height: 100%;
+        margin-right: 10px;
+      }
+      p:nth-child(2) {
+        color: #fb5947;
+      }
+    }
+  }
 }
 
 footer {
   width: 100%;
   height: 70px;
   background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal {
@@ -109,45 +154,4 @@ footer {
 
 .off {
   display: none;
-}
-
-.ul {
-  padding: 30px;
-  .list {
-    position: relative;
-    width: 90%;
-    margin: 10px;
-    background-color: white;
-    color: #fb5947;
-    padding: 10px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    p:nth-child(2) {
-      color: black;
-      font-size: 14px;
-    }
-    .delete {
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #fb5947;
-      background: none;
-      font-weight: bolder;
-      font-size: 25px;
-      border: none;
-    }
-  }
-  .li2 {
-    flex-direction: row;
-    img {
-      height: 100%;
-      margin-right: 10px;
-    }
-    p:nth-child(2) {
-      color: #fb5947;
-    }
-  }
 }
