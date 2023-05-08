@@ -45,7 +45,7 @@ header ul .createBtn {
 .document .ul {
   padding: 30px;
 }
-.document section {
+.document li {
   display: flex;
   align-items: center;
   padding: 10px;
@@ -53,6 +53,11 @@ header ul .createBtn {
   width: 95%;
   margin: 10px auto;
   border-radius: 10px;
+  position: relative;
+}
+.document li .controls {
+  position: absolute;
+  right: 5px;
 }
 .document .todo,
 .document .note {

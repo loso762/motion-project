@@ -46,7 +46,7 @@ header {
     padding: 30px;
   }
 
-  section {
+  li {
     display: flex;
     align-items: center;
     padding: 10px;
@@ -54,6 +54,11 @@ header {
     width: 95%;
     margin: 10px auto;
     border-radius: 10px;
+    position: relative;
+    .controls {
+      position: absolute;
+      right: 5px;
+    }
   }
 
   .todo,
