@@ -21,11 +21,12 @@ export class pageItemComponent extends baseComponent {
     }
 }
 export class PageComponent extends baseComponent {
-    constructor() {
+    constructor(pageItemConstructor) {
         super('<ul class="page"></ul>');
+        this.pageItemConstructor = pageItemConstructor;
     }
     addChild(section) {
-        const item = new pageItemComponent();
+        const item = new this.pageItemConstructor();
         item.addChild(section);
         item.attachTo(this.element, "beforeend");
         item.setOnCloseListner(() => {
