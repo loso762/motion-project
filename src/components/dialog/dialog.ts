@@ -1,8 +1,8 @@
 import {Composable} from "../page/page.js";
 import {BaseComponent, Component} from "./../component.js";
 
-type OnCloseListener = () => void;
 type OnSubmitListener = () => void;
+type OnCloseListener = () => void;
 
 export class InputDialog extends BaseComponent<HTMLElement> implements Composable {
   closeListener?: OnCloseListener;
