@@ -10,6 +10,7 @@ import {TextSectionInput} from "./components/dialog/input/text-input";
 
 class App {
   private readonly page: Component & Composable;
+
   constructor(appRoot: HTMLElement, dialogRoot: HTMLElement) {
     this.page = new PageComponent(PageItemComponent);
     this.page.attachTo(appRoot);
