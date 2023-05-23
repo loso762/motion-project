@@ -2,58 +2,29 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script defer src="./dist/app.js" type="module"></script>
-  <link rel="stylesheet" href="./style/index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motion</title>
+  <link rel="stylesheet" href="./style/index.css" />
+  <script type="module" src="./dist/app.js" defer></script>
 </head>
 
 <body>
-
   <div class="app">
-    <header>
-      <h1>MOTION</h1>
-      <ul>
-        <li>
-          <button class="createBtn" id="newImage">IMAGE</button>
-        </li>
-        <li>
-          <button class="createBtn" id="newNote">NOTE</button>
-        </li>
-        <li>
-          <button class="createBtn" id="newTodo">TASK</button>
-        </li>
-        <li>
-          <button class="createBtn" id="newVideo">VIDEO</button>
-        </li>
+    <header class="banner">
+      <h1 class="banner__title">Motion</h1>
+      <ul class="control-panel">
+        <li><button id="new-image" class="create-button">Image</button></li>
+        <li><button id="new-video" class="create-button">Video</button></li>
+        <li><button id="new-note" class="create-button">Note</button></li>
+        <li><button id="new-todo" class="create-button">Todo</button></li>
       </ul>
     </header>
-
-    <main class="document">
-    </main>
-
-    <footer>
-      this is footer
+    <main class="document"></main>
+    <footer class="footer">
+      <p>© Copyright by Dream Coding Academy. All rights reserved.</p>
     </footer>
   </div>
-
-  <div class="modal off">
-    <div class="box">
-      <button class="esc">✖️</button>
-      <div>
-        <p>제목</p>
-        <input type="text" class="title">
-      </div>
-      <div>
-        <p class="pName"></p>
-        <input type="text" class="content">
-      </div>
-      <button class="add">Add</button>
-    </div>
-  </div>
-
 </body>
 
 </html>
